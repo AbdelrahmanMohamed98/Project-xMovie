@@ -1,0 +1,38 @@
+.row {
+  color: white;
+  margin-left: 20px;
+}
+.rowPosters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+.rowPosters::-webkit-scrollbar {
+  display: none;
+}
+.rowPoster {
+  height: 250px;
+  width: 170px;
+  object-fit: contain;
+  margin-right: 40px;
+  transition: transform 450ms;
+  border-radius: 20px;
+}
+.rowPoster:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.rowTitle {
+  font-weight: bold;
+  margin-top: 10px;
+  width: 160px;
+}
+.rowDate {
+  font-size: small;
+  margin-top: 5px;
+  color: #cacaca;
+  max-width: fit-content;
+}

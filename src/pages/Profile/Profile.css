@@ -1,0 +1,100 @@
+.profile {
+  position: relative;
+
+  height: 100vh;
+  color: white;
+  background-image: url("../../assets/footer-bg.jpg");
+}
+.profileGradient {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1) 0,
+    rgba(0, 0, 0, 0.2) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+.profileBody {
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+  width: 70%;
+  padding-top: 8%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.profileBody > h1 {
+  z-index: 1;
+  margin-top: 50px;
+  font-size: 60px;
+  font-weight: 400;
+  border-bottom: 1px solid #282c2d;
+  text-align: center;
+}
+.profileInfo {
+  z-index: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+}
+.profileInfo > img {
+  height: 80px;
+  z-index: 1;
+  margin: 20px;
+}
+.profileDetails {
+  color: white;
+  z-index: 1;
+
+  flex: 1;
+}
+.profileDetails > h2 {
+  z-index: 1;
+  border-radius: 4rem;
+  background-color: gray;
+  padding: 15px;
+  font-size: 15px;
+  padding-left: 20px;
+}
+.profileSignOut {
+  z-index: 1;
+
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-top: 5%;
+  width: 100%;
+  color: white;
+  background: #ff0000;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+.profilePlans {
+  margin-top: 20px;
+}
+.profilePlans > h3 {
+  border-bottom: 1px solid #282c2d;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 709px) {
+  .profileDetails {
+    margin-top: 20px;
+  }
+  .profileBody > h1 {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 472px) {
+  .profileBody > h1 {
+    font-size: 39px;
+  }
+}
